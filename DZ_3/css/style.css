@@ -3,10 +3,68 @@ body {
 }
 .conteiner {
   background-color: #FFFFFF;
-  width: 1060px;
+  width: 980px;
   min-height: 950px;
   margin: 0 auto;
+  padding: 0 45px;
   -webkit-box-shadow: 0px 0px 4px 1px rgba(216,216,216,1);
   -moz-box-shadow: 0px 0px 4px 1px rgba(216,216,216,1);
   box-shadow: 0px 0px 4px 1px rgba(216,216,216,1);
+}
+
+.logo {
+  height: 92px;
+  width: auto;
+  padding: 37px 3px 0;
+}
+
+.logo img {
+  width: 145;
+  height: 40px;
+}
+
+.top_panel {
+  background-color: #4F4E4E;
+  color: #C2C2C2;
+  background-image: url(../img/panel.png);
+  width: 966px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.main_content div {
+  display: inline-block;
+
+}
+
+.left_menu {
+  width: 240px;
+  height: 240px;
+}
+
+.image_velo {
+  width: 678px;
+  height: 400px;
+}
+
+.article_velo {
+  color: #C2C2C2;
+  width: 678px;
+}
+
+.footer_panel {
+  color: #C2C2C2;
+  background-color: #E1E1E1;
+  width: 966px;
+  height: 40px;
+  margin: 0 auto;
+}
+/* Вставка макета для проверки на идентичность*/
+#template {
+	position: absolute;
+	background-color: transparent;
+	opacity: 0;
+  margin: 0 0 0 -45px;
+  padding: 0;
+	z-index: 1;
 }
