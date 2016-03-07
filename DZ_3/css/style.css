@@ -1,78 +1,136 @@
-@import url("open_sansregular/font.css");
+@import url("fontstyle.css");
+/* общийфон сайта */
 body {
-  background-color: #F9F9F9;
+    background-color: #F9F9F9;
 }
+/* центральный фон сайта */
 .conteiner {
-  background-color: #FFFFFF;
-  width: 980px;
-  min-height: 950px;
-  margin: 0 auto;
-  padding: 0 45px;
-  -webkit-box-shadow: 0px 0px 4px 1px rgba(216,216,216,1);
-  -moz-box-shadow: 0px 0px 4px 1px rgba(216,216,216,1);
-  box-shadow: 0px 0px 4px 1px rgba(216,216,216,1);
+    width: 980px;
+    min-height: 950px;
+    margin: 0 auto;
+    padding: 0 45px;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(216,216,216,1);
+    -moz-box-shadow: 0px 0px 4px 1px rgba(216,216,216,1);
+    box-shadow: 0px 0px 4px 1px rgba(216,216,216,1);
 }
+/* Логотип */
 .logo {
-  height: 92px;
-  width: auto;
-  padding: 37px 3px 0;
+    width: auto;
+    height: 92px;
+    padding: 35px 4px 0;
 }
 .logo img {
-  width: 145;
-  height: 40px;
+    width: 145;
+    height: 40px;
 }
-.top_panel {
-  background-color: #4F4E4E;
-  background-image: url(../img/panel.png);
-  width: 966px;
-  height: 40px;
-  margin: 0 0 0 5px;
+/* Верхнее меню */
+nav {
+    margin: 4px 9px 0 5px;
+    padding: 7px 0px 11px 0;
+    background-color: #4F4E4E;
+    background-image: url(../img/panellittle.png);
+    background-repeat: repeat-x;
+    text-align: left;
 }
-.top_panel li {
-    display: inline-block;
-    height: 12px;
-    width: 77px;
-    padding: 14px 0 14px 24px;
-    margin: 0 32px 0 0;
-    font-family: "open_sansregular";
+nav a {
+    color: #C2C2C2;
+    text-decoration: none;
+    font-family: OpenSans_Regular;
+    font-size: 16px;
 }
-.top_panel li:hover {
-  background-image: url(../img/link.png);
+/* Настройка расположения кнопочек верхнегоменю */
+#nav1 {
+    margin: 0 17px 0 2px;
+    padding: 7px 24px 11px 24px; /* формирует размер кнопки */
 }
-
-a {
-  color: #C2C2C2;
-  text-decoration: none;
-  font-size: 16px;
+#nav2 {
+    margin: 0 15px 0 17px;
+    padding: 7px 26px 11px 26px;/* формирует размер кнопки */
 }
-.main_content div {
-  display: inline-block;
+#nav3 {
+    margin: 0 18px 0 15px;
+    padding: 7px 30px 11px 30px;/* формирует размер кнопки */
 }
-.left_menu {
-  width: 240px;
-  height: 240px;
+#nav4 {
+    margin: 0 0 0 18px;
+    padding: 7px 17px 11px 18px;/* формирует размер кнопки */
 }
-.image_velo {
-  width: 678px;
-  height: 400px;
+nav a:hover {
+    background-image: url(../img/link.png);
+    background-repeat: no-repeat;
 }
-.article_velo {
-  color: #C2C2C2;
-  width: 678px;
-}
+/* Нижняя панель */
 .footer_panel {
-  color: #C2C2C2;
-  background-color: #E1E1E1;
-  width: 966px;
-  height: 40px;
-  margin: 0 auto;
+    width: 966px;
+    height: 22px;
+    margin: 40px auto 0;
+    background-color: #E1E1E1;
+}
+.footer_panel a {
+    color: #2c2c2c;
+}
+.footer_panel a:hover {
+
+   text-decoration: underline;
+   background-color: #E1E1E1;
+   background-image: none;
+   color: #2c2c2c;
+}
+span{
+	margin: 0 0 0 268px;
+}
+/* конец Верхнее меню */
+/*  Общий контейнер */
+.main_content {
+  padding: 40px 0 0 5px;
+}
+/* Левое меню */
+.left_menu {
+  position: absolute;
+}
+.left_menu p {
+    width: 238px;
+    height: 39px;
+    margin: 0 0 -1px 0;
+    border: 1px solid #c8c8c8;
+    text-indent: 22px;
+}
+.left_menu p:hover {
+    width: 228px;
+    padding-left: 10px;
+    background-color: #f9f9f9;
+    text-indent: 36px;
+}
+.left_menu a {
+    color: #656363;
+    text-decoration: none;
+    font-family: OpenSans_Regular;
+    font-size: 13px;
+    line-height: 39px;
+}
+/* Изображение велосипеда */
+.image_velo {
+    width: 478px;
+    height: 400px;
+    margin-left: 288px;
+}
+/* Статья */
+article {
+    width: 618px;
+    padding: 32px 30px 0 311px;
+    color: #2C2C2C;
+    font-family: OpenSans_Regular;
+    font-size: 16px;
+    line-height: 21px;
+    overflow:  visible;
 }
 /* Вставка макета для проверки на идентичность*/
 #template {
 	position: absolute;
-	background-color: transparent;
-	opacity: 0;
   margin: 0 0 0 -45px;
   padding: 0;
+	background-color: transparent;
+	opacity: 0.3;
 	z-index: 1;
 }

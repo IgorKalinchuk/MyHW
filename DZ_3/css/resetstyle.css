@@ -1,9 +1,11 @@
+@import url("fontstyle.css");
 body {
-padding: 0;
-margin: 0;
-font: 13px open_sansregular, sans-serif;
+	padding: 0;
+	margin: 0;
 *font-size: small;
 *font: x-small;
+	font-family: "OpenSans_Regular";
+	font-size: 10px;
 }
 h1, h2, h3, h4, h5, h6, ul, li, em, strong, pre, code {
 padding: 0;
